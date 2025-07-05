@@ -1,0 +1,89 @@
+body{
+    background-image: url("ntx.jpg");
+    background-repeat: "no-repeat";
+    background-size:cover;
+}
+h1{
+    color: red;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+#language{
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    width:100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+#signin{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+}
+h2{
+    color:white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+h4{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+#email{
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 380px;
+    right:500px;
+    width: 400px;
+    padding: 20px;
+    margin: 50px;
+    text-align: left;
+}
+#getstarted{
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 430px;
+    right: 370px;
+    width: 150px;
+    height: 60px;
+}
+p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+.image{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40px;
+    gap: 15px;
+    transition: 1.3s ease-in-out;
+}
+img:hover{
+    transform: scale(1.103);
+    transition: 0.5s ease-in-out;
+}
