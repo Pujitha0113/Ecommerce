@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Animation Property</title>
+        <style>
+            div{
+                width: 250px;
+                height: 350px;
+                color: white;
+                text-align: center;
+                position: relative;
+                letter-spacing: 3px;
+                line-height: 30px;
+                margin: 20px 20px 20px 20px;
+                animation-name: myAnimation;
+                animation-duration: 10s;
+                animation-timing-function:linear;
+                animation-iteration-count: infinite;
+                animation-direction:alternate;
+            }
+            @keyframes myAnimation{
+                from{
+                    background-color: beige;
+                    top: 0px;
+                    left: 0px;
+                }
+                to{
+                    background-color: black;
+                    top: 100px;
+                    left: 100px;
+                }                
+                30%{
+                    background-color: indigo;
+                    width: 0px;
+                    height: 0px;
+                    border-radius: 10px;
+                }
+                60%{
+                    background-color: mediumvioletred;
+                    width:20px;
+                    height:30px;
+                    border-radius: 30px;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Heyyy</h1>
+            <h2>Listen</h2>
+            <img src="pushpa.jpg" height="150px" weight="150px">
+        </div>
+    </body>
+</html>

@@ -57,6 +57,7 @@ h4{
     padding: 20px;
     margin: 50px;
     text-align: left;
+    border-radius: 10px;
 }
 #getstarted{
     color: white;
@@ -69,6 +70,7 @@ h4{
     right: 370px;
     width: 150px;
     height: 60px;
+    border-radius: 10px;
 }
 p{
     color: white;
@@ -79,11 +81,116 @@ p{
 .image{
     display: flex;
     justify-content: space-around;
-    border-radius: 40px;
-    gap: 15px;
+    border-radius: 60px;
+    gap: 20px;
     transition: 1.3s ease-in-out;
+    overflow-x: auto;
+}
+.image::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
 }
 img:hover{
     transform: scale(1.103);
     transition: 0.5s ease-in-out;
+    border-radius: 20px;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.number{
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    text-shadow: 5px;
+    -webkit-text-stroke: 1px white;
+}
+.container{
+    color: white;
+    font-size: 25px;
+}
+details summary{
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    padding-right:30px;
+}
+details summary::-webkit-details-marker{
+    display:none;
+}
+details summary::after{
+    content:"+";
+    position:absolute;
+    right:30px;
+    font-size: 30px;
+    color:white;
+}
+details[open] summary::after{
+    content:"x";
+}
+.box{
+    display: flex;
+    gap:20px;
+    flex-direction: row;
+}
+.box1{
+    color: white;
+    height: 250px;
+    width:200px;
+    background-color: rgb(43, 43, 90);
+    gap: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px; 
+}
+.data{
+    color: white;
+    font-size: 15px;
+    padding:10px;
+    font-weight: lighter; 
+}
+#email1{
+    background-color:black;
+    color:white; 
+    padding:20px;
+    margin:15px;
+    left:350px;
+    width: 350px;
+    position:absolute;
+    border-radius: 5px;
+}
+#getstarted1{
+    color:white;
+    background-color:red;
+    font-size:medium;
+    position:absolute;
+    padding:20px;
+    margin:15px;
+    left:750px;
+    border-radius: 5px;
+}
+#language1{
+   position: absolute;
+    top: 2250px;
+    margin: 15px;
+    width: 150px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: large; 
+}
+.links{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    left: 300px;
+    color: rgb(146, 141, 141);
+    gap:20px;
 }
